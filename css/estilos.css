@@ -1,0 +1,302 @@
+/*========================*/
+/*====== Generales =======*/
+/*========================*/
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+/*========================*/
+/*====== Encabezado ======*/
+/*========================*/
+.header{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: rgb(151, 165, 211);
+    border-radius: 10px;
+}
+
+.header__logo{
+    width: 100%;
+    filter:invert();
+    max-width: 100px;
+}
+
+.header__menu{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.header__menu li {
+    display:inline;
+    list-style: none;
+}
+
+.header__menu a{
+    text-decoration: none;
+    color: white;
+    padding-inline: 10px;
+}
+
+.header__menu a:hover{
+    text-decoration:underline;
+    color: rgb(223, 222, 222);
+}
+
+@media screen and (max-width: 600px) {
+    .header__menu a{
+        font-size: small;
+    }
+}
+
+
+
+
+/*========================*/
+/*========= Main =========*/
+/*========================*/
+
+.main{
+    margin-top: 15px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main__hero{
+    width: 100%;
+    text-align: center;
+    filter:sepia();
+    border-radius: 5px;
+}
+
+.main__titulo{
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+
+/*========================*/
+/*========= Pie ==========*/
+/*========================*/
+
+.pie {
+    display: flex;
+    flex-direction: column;
+}
+
+.pie__formNews{
+    display:flex;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+    background-color: rgb(85, 126, 97);
+    justify-content: center;
+    color: white;
+    line-height: 2em;
+    border-radius: 25px;
+}
+
+.pie__nav{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    background-color: rgb(151, 165, 211);
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px 0px 20px 0px;
+}
+
+.pie__menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    width: 70%;
+    list-style:none;
+    text-align: left;
+}
+
+.pie__menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.pie__menu a:hover{
+    text-decoration:underline;
+    color: black;
+}
+
+.pie__logos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+.pie__logo{
+    display: inline-block;
+    max-width: 100px;
+}
+
+.pie__wfx{
+    color: rgb(238, 238, 238);
+}
+
+
+
+
+/*========================*/
+/*======= Contacto =======*/
+/*========================*/
+
+.main__contacto {
+    display: grid;
+    grid-row-gap: 40px;
+}
+
+.main__contactoMapa{
+    display: inline-block;
+    max-width: 100%;
+    box-shadow: 10px 10px;
+}
+
+.main__formContacto{
+    display: inline-block;
+    max-width: 100%;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(215, 223, 253);
+    border-radius: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.main__formContacto input,select,textarea {
+    display: inline-block;
+    width: 50%;
+    margin: 5px 5px 10px 5px;
+    padding: 5px 0px 10px 20px;
+    border-radius: 20px;
+}
+
+.main__formContacto button {
+    background-color: cadetblue;
+    border-radius: 10px;
+    justify-self: stretch;
+    color: white;
+    padding: 5px;
+    width: 45%;
+}
+
+.terminos {
+    display: inline-block;
+    margin:0px;
+    padding: 0px;
+    width: auto;
+}
+
+.terminos2 {
+    display: inline-block;
+    margin:0px;
+    padding: 0px;
+    width: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .main__formContacto input,select,textarea {
+        display: inline-block;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+/*========================*/
+/*==== Tabla Nosotros ====*/
+/*========================*/
+
+.main__tablaNosotros {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.main__fotoIntegrante {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+.main__fotoIntegrante img {
+    border-radius: 25px;
+    box-shadow: 4px 4px rgb(201, 189, 189);
+}
+
+
+@media screen and (max-width: 1000px) {
+    .main__fotoIntegrante{
+        grid-template-columns: 1fr;
+    } 
+}
+
+
+/*========================*/
+/*=== Tabla Productos ====*/
+/*========================*/
+
+.tablaProductos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    margin: 10px 0px 20px 0px;
+    justify-items: center;
+    justify-content:space-evenly;
+}
+
+.celdaProductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(215, 218, 224);
+    padding: 20px;
+    border-radius: 50px;
+    line-height: 1.5em;
+    box-shadow: 5px 5px grey;
+}
+
+.celdaProductos img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.celdaProductos button {
+    background-color: cadetblue;
+    border-radius: 10px;
+    justify-self: stretch;
+    color: white;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 850px) {
+    .tablaProductos{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}

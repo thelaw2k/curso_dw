@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Clase 8 - Desarrollo Web</title>
+</head>
+<body>
+    
+    <!-- Encabezado y menu -->
+    <header>
+        <nav class="header">
+            <a href="../index.html"><img src="../assets/logo_tuerca.png" alt="Logo del sitio" class="header__logo" /></a>
+            <ul class="header__menu">
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./promociones.html">Promociones</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Contenido -->
+    <main>
+        <section class="main">
+            <img src="../assets/hero.jpg" alt="" class="main__hero">
+            <h2 class="main__titulo">Ubicacion</h2>
+
+            <div class="main__contacto">
+                <div class="main__contactoMapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.615117839386!2d-63.248111468559856!3d-32.40267749138358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc42dbdbc420ab%3A0x84b5693840c32346!2sBulonera%20Camba%20S.R.L.!5e0!3m2!1ses-419!2sar!4v1659581968675!5m2!1ses-419!2sar" width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="main__formContacto">
+                    <h2 class="main__titulo">Contacto</h2>
+                    <form action="">
+                        <div>
+                            <label for="frm_Nombre">Nombre</label>
+                            <input type="text" name="" placeholder="Ingrese su nombre" id="frm_Nombre" />
+                        </div>
+                        <div>
+                            <label for="frm_Tel">Telefono</label>
+                            <input type="text" name="" placeholder="Ingrese su telefono" id="frm_Tel" />
+                        </div>
+                        <div>
+                            <label for="frm_Email">Email</label>
+                            <input type="text" name="" placeholder="Ingrese su email" id="frm_Email" />
+                        </div>
+                        <div>
+                            <label for="frm_EC">Estado Civil</label>
+                            <select name="" id="frm_EC">
+                                <option value="soltero">Soltero</option>
+                                <option value="casado">Casado</option>
+                                <option value="viudo">Viudo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h4>Mensaje</h4>
+                            <textarea name="" cols="30" rows="10"></textarea>
+                        </div>
+                        <p>
+                            <div class="terminos">
+                                <label for="terminos">Acepta los Terminos y condiciones</label>
+                            </div>
+                            <div class="terminos2">
+                                <input type="checkbox" name="" id="terminos" />
+                            </div>
+                        </p>
+                        <div>
+                            <button type="submit" class="boton">Enviar</button>
+                            <button type="reset" class="boton">Borrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+    <!-- Pie de pagina -->
+    <footer class="pie">
+        <div class="pie__formNews">
+            <form action="">
+                <div>Suscripcion a nuestro newsletter</div>
+                <input type="text" name="" placeholder="Ingrese su email" id="email_news">
+                <button type="submit">Suscrbirme</button>
+            </form>
+        </div>
+
+        <nav class="pie__nav">
+            <ul  class="pie__menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./promociones.html">Promociones</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+            <div class="pie__logos">
+                <a href="../index.html"><img src="../assets/logo_tuerca.png" alt="Logo del sitio" class="pie__logo" /></a>
+                <a href="http://wfxgroup.com.ar/"><img src="http://regional5.com.ar/colegio-arquitectos/wp-content/uploads/2022/03/logo_wfx_pie.png" alt="powered by WFXGROUP" class="pie__wfx" /></a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
