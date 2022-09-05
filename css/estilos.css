@@ -8,8 +8,6 @@ body {
 }
 
 
-
-
 /*========================*/
 /*====== Encabezado ======*/
 /*========================*/
@@ -18,12 +16,23 @@ body {
     grid-template-columns: 1fr 4fr;
     background-color: rgb(151, 165, 211);
     border-radius: 10px;
+    background:  linear-gradient(to bottom, rgb(151, 165, 211), #ccc)    
+}
+
+@keyframes rotacion_tuerca{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
 }
 
 .header__logo{
     width: 100%;
     filter:invert();
     max-width: 100px;
+    animation-name: rotacion_tuerca;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s;
 }
 
 .header__menu{
