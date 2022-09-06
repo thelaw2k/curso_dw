@@ -7,6 +7,17 @@ body {
     font-size: 20px;
 }
 
+.boton {
+    background-color: cadetblue;
+    border-radius: 10px;
+    justify-self: stretch;
+    color: white;
+    padding: 5px;
+}
+
+.boton:hover {
+    transform: scale(1.1,1.1);
+}
 
 /*========================*/
 /*====== Encabezado ======*/
@@ -293,14 +304,6 @@ body {
 .celdaProductos img {
     width: 150px;
     border-radius: 20px;
-}
-
-.celdaProductos button {
-    background-color: cadetblue;
-    border-radius: 10px;
-    justify-self: stretch;
-    color: white;
-    padding: 5px;
 }
 
 
