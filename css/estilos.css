@@ -7,18 +7,6 @@ body {
     font-size: 20px;
 }
 
-.boton {
-    background-color: cadetblue;
-    border-radius: 10px;
-    justify-self: stretch;
-    color: white;
-    padding: 5px;
-}
-
-.boton:hover {
-    transform: scale(1.1,1.1);
-}
-
 /*========================*/
 /*====== Encabezado ======*/
 /*========================*/
@@ -27,7 +15,8 @@ body {
     grid-template-columns: 1fr 4fr;
     background-color: rgb(151, 165, 211);
     border-radius: 10px;
-    background:  linear-gradient(to bottom, rgb(151, 165, 211), #ccc)    
+    background:  linear-gradient(to bottom, rgb(151, 165, 211), #ccc);
+    padding: 10px;
 }
 
 @keyframes rotacion_tuerca{
@@ -50,6 +39,7 @@ body {
     display:flex;
     justify-content:space-around;
     align-items: center;
+    font-size: large;
 }
 
 .header__menu li {
@@ -207,39 +197,21 @@ body {
 .main__formContacto input,select,textarea {
     display: inline-block;
     width: 50%;
-    margin: 5px 5px 10px 5px;
-    padding: 5px 0px 10px 20px;
-    border-radius: 20px;
+    margin: 10px 5px 10px 5px;
 }
 
 .main__formContacto button {
-    background-color: cadetblue;
     border-radius: 10px;
     justify-self: stretch;
-    color: white;
-    padding: 5px;
-    width: 45%;
-}
-
-.terminos {
-    display: inline-block;
-    margin:0px;
-    padding: 0px;
-    width: auto;
-}
-
-.terminos2 {
-    display: inline-block;
-    margin:0px;
-    padding: 0px;
-    width: auto;
+    padding: 10px;
+    margin: 20px;
+    width: 30%;
 }
 
 @media screen and (max-width: 1000px) {
     .main__formContacto input,select,textarea {
         display: inline-block;
         max-width: 100%;
-        border-radius: 10px;
     }
 }
 
@@ -296,9 +268,7 @@ body {
     align-items: center;
     background-color:rgb(215, 218, 224);
     padding: 20px;
-    border-radius: 50px;
     line-height: 1.5em;
-    box-shadow: 5px 5px grey;
 }
 
 .celdaProductos img {

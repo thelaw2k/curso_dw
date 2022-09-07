@@ -49,41 +49,37 @@
                 <div class="main__formContacto">
                     <h2 class="main__titulo">Contacto</h2>
                     <form action="">
-                        <div>
-                            <label for="frm_Nombre">Nombre</label>
-                            <input type="text" name="" placeholder="Ingrese su nombre" id="frm_Nombre" />
+                        <div class="input-group mb-3">                        
+                            <span class="input-group-text" id="basic-addon1">Nombre</span>
+                            <input type="text" class="form-control" name="nombre"  placeholder="Ingrese su nombre" />
                         </div>
-                        <div>
-                            <label for="frm_Tel">Telefono</label>
-                            <input type="text" name="" placeholder="Ingrese su telefono" id="frm_Tel" />
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Telefono</span>
+                            <input type="text" name="telefono" placeholder="Ingrese su telefono" />
                         </div>
-                        <div>
-                            <label for="frm_Email">Email</label>
-                            <input type="text" name="" placeholder="Ingrese su email" id="frm_Email" />
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Email</span>
+                            <input type="text" name="email" placeholder="Ingrese su email" />
                         </div>
-                        <div>
-                            <label for="frm_EC">Estado Civil</label>
-                            <select name="" id="frm_EC">
-                                <option value="soltero">Soltero</option>
-                                <option value="casado">Casado</option>
-                                <option value="viudo">Viudo</option>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Estado Civil</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option value="1">Soltero</option>
+                                <option value="2">Casado</option>
+                                <option value="3">Viudo</option>
                             </select>
                         </div>
-                        <div>
-                            <h4>Mensaje</h4>
-                            <textarea name="" cols="30" rows="10"></textarea>
+                        <div class="input-group">
+                            <span class="input-group-text">Mensaje</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
                         </div>
-                        <p>
-                            <div class="terminos">
-                                <label for="terminos">Acepta los Terminos y condiciones</label>
-                            </div>
-                            <div class="terminos2">
-                                <input type="checkbox" name="" id="terminos" />
-                            </div>
-                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">Acepta los Terminos y condiciones</label>
+                        </div>                        
                         <div>
-                            <button type="submit" class="boton">Enviar</button>
-                            <button type="reset" class="boton">Borrar</button>
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                            <button type="reset" class="btn btn-danger">Borrar</button>
                         </div>
                     </form>
                 </div>
