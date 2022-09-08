@@ -111,9 +111,9 @@ body {
     height: auto;
     width: 100%;
     max-height: 200px;
-    background-color: rgb(85, 126, 97);
+    background-color: rgb(173, 211, 184);
     justify-content: center;
-    color: white;
+    color: rgb(43, 71, 41);
     line-height: 2em;
     border-radius: 25px;
 }
