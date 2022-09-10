@@ -10,14 +10,6 @@ body {
 /*========================*/
 /*====== Encabezado ======*/
 /*========================*/
-.header{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    background-color: rgb(151, 165, 211);
-    border-radius: 10px;
-    background:  linear-gradient(to bottom, rgb(151, 165, 211), #ccc);
-    padding: 10px;
-}
 
 @keyframes rotacion_tuerca{
     0%{ transform: rotate(0deg); }
@@ -34,37 +26,6 @@ body {
     animation-duration: 3s;
     animation-delay: 0s;
 }
-
-.header__menu{
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
-    font-size: large;
-}
-
-.header__menu li {
-    display:inline;
-    list-style: none;
-}
-
-.header__menu a{
-    text-decoration: none;
-    color: white;
-    padding-inline: 10px;
-}
-
-.header__menu a:hover{
-    text-decoration:underline;
-    color: rgb(223, 222, 222);
-}
-
-@media screen and (max-width: 600px) {
-    .header__menu a{
-        font-size: small;
-    }
-}
-
-
 
 
 /*========================*/
@@ -92,16 +53,9 @@ body {
 }
 
 
-
-
 /*========================*/
 /*========= Pie ==========*/
 /*========================*/
-
-.pie {
-    display: flex;
-    flex-direction: column;
-}
 
 .pie__formNews{
     display:flex;
@@ -146,7 +100,7 @@ body {
 
 .pie__menu a:hover{
     text-decoration:underline;
-    color: black;
+    color: rgb(26, 7, 107);
 }
 
 .pie__logos {
@@ -166,8 +120,6 @@ body {
 }
 
 
-
-
 /*========================*/
 /*======= Contacto =======*/
 /*========================*/
@@ -184,20 +136,18 @@ body {
 }
 
 .main__formContacto{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-evenly;
     max-width: 100%;
     margin: 20px;
     padding: 10px;
     background-color: rgb(215, 223, 253);
     border-radius: 25px;
     margin-bottom: 25px;
-    text-align: center;
-}
-
-.main__formContacto input,select,textarea {
-    display: inline-block;
-    width: 50%;
-    margin: 10px 5px 10px 5px;
+    box-shadow: 10px 10px;
+    row-gap: 20px;
 }
 
 .main__formContacto button {
@@ -207,14 +157,6 @@ body {
     margin: 20px;
     width: 30%;
 }
-
-@media screen and (max-width: 1000px) {
-    .main__formContacto input,select,textarea {
-        display: inline-block;
-        max-width: 100%;
-    }
-}
-
 
 
 
