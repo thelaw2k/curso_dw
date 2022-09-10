@@ -150,12 +150,15 @@ body {
     row-gap: 20px;
 }
 
+.main__formContacto__botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .main__formContacto button {
     border-radius: 10px;
-    justify-self: stretch;
     padding: 10px;
     margin: 20px;
-    width: 30%;
 }
 
 
@@ -166,7 +169,7 @@ body {
 
 .main__tablaNosotros {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 .main__fotoIntegrante {
@@ -177,16 +180,14 @@ body {
     padding: 10px;
 }
 
-.main__fotoIntegrante img {
-    border-radius: 25px;
-    box-shadow: 4px 4px rgb(201, 189, 189);
-}
-
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
     .main__fotoIntegrante{
         grid-template-columns: 1fr;
-    } 
+        column-gap: 3px;
+    }
+    .main__textoNosotros {
+        font-size: 0.8em;
+    }
 }
 
 
