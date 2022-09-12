@@ -1,0 +1,23 @@
+/*========================*/
+/*==== Tabla Nosotros ====*/
+/*========================*/
+
+.main__tablaNosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.main__fotoIntegrante {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .main__fotoIntegrante{
+        grid-template-columns: 1fr;
+        column-gap: 3px;
+    }
+}

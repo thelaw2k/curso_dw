@@ -1,0 +1,34 @@
+/*========================*/
+/*=== Tabla Productos ====*/
+/*========================*/
+
+.tablaProductos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    margin: 10px 0px 20px 0px;
+    justify-items: center;
+    justify-content:space-evenly;
+}
+
+.celdaProductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(215, 218, 224);
+    padding: 20px;
+    line-height: 1.5em;
+}
+
+.celdaProductos img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .tablaProductos{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}

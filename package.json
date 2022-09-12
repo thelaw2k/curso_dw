@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "Proyecto Sass Ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelaw2k/curso_dw.git"
+  },
+  "author": "Diego Colinas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thelaw2k/curso_dw/issues"
+  },
+  "homepage": "https://github.com/thelaw2k/curso_dw#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
