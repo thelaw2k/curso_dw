@@ -19,12 +19,14 @@
     background-color: $fondo_celda_productos;
     padding: 20px;
     line-height: 1.5em;
+
+    & img {
+        width: 150px;
+        border-radius: 20px;
+    }
 }
 
-.celdaProductos img {
-    width: 150px;
-    border-radius: 20px;
-}
+
 
 
 @media screen and (max-width: 1000px) {

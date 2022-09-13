@@ -32,9 +32,10 @@
             padding: 10px;
             margin: 20px;
         }
+        
+        &__botones {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
 }
 
-.main__formContacto__botones {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}

@@ -13,17 +13,15 @@ body {
   color: black;
   margin-left: auto;
   margin-right: auto; }
-
-.main__hero {
-  width: 100%;
-  text-align: center;
-  filter: sepia();
-  border-radius: 5px; }
-
-.main__titulo {
-  font-size: 2em;
-  margin-top: 20px;
-  text-align: center; }
+  .main__hero {
+    width: 100%;
+    text-align: center;
+    filter: sepia();
+    border-radius: 5px; }
+  .main__titulo {
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center; }
 
 /*========================*/
 /*====== Encabezado ======*/
@@ -74,14 +72,12 @@ body {
   width: 70%;
   list-style: none;
   text-align: left; }
-
-.pie__menu a {
-  text-decoration: none;
-  color: white; }
-
-.pie__menu a:hover {
-  text-decoration: underline;
-  color: #1a076b; }
+  .pie__menu a {
+    text-decoration: none;
+    color: white; }
+  .pie__menu a:hover {
+    text-decoration: underline;
+    color: #1a076b; }
 
 .pie__logos {
   display: flex;
@@ -115,10 +111,9 @@ body {
   background-color: #d7dae0;
   padding: 20px;
   line-height: 1.5em; }
-
-.celdaProductos img {
-  width: 150px;
-  border-radius: 20px; }
+  .celdaProductos img {
+    width: 150px;
+    border-radius: 20px; }
 
 @media screen and (max-width: 1000px) {
   .tablaProductos {
@@ -153,10 +148,9 @@ body {
     border-radius: 10px;
     padding: 10px;
     margin: 20px; }
-
-.main__formContacto__botones {
-  display: grid;
-  grid-template-columns: 1fr 1fr; }
+  .main__formContacto__botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
 
 /*========================*/
 /*==== Tabla Nosotros ====*/

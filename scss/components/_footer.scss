@@ -31,16 +31,16 @@
     width: 70%;
     list-style:none;
     text-align: left;
-}
 
-.pie__menu a{
-    text-decoration: none;
-    color: white;
-}
-
-.pie__menu a:hover{
-    text-decoration:underline;
-    color: rgb(26, 7, 107);
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    & a:hover{
+        text-decoration:underline;
+        color: rgb(26, 7, 107);
+    }
 }
 
 .pie__logos {
