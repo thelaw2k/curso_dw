@@ -26,15 +26,15 @@
     margin-bottom: 25px;
     box-shadow: 10px 10px;
     row-gap: 20px;
+
+        & button {
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px;
+        }
 }
 
 .main__formContacto__botones {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.main__formContacto button {
-    border-radius: 10px;
-    padding: 10px;
-    margin: 20px;
 }

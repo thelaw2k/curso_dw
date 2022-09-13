@@ -2,7 +2,12 @@
 /*====== Generales =======*/
 /*========================*/
 
+// Varialbles
+$tamano_fuente: 20px;
+$fuente_general: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$fondo_celda_productos: rgb(215, 218, 224);
+
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-family: $fuente_general;
+    font-size: $tamano_fuente;
 }
