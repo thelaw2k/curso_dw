@@ -26,11 +26,12 @@
     }
 }
 
-
-
-
 @media screen and (max-width: 1000px) {
     .tablaProductos{
         grid-template-columns: repeat(2, 1fr);
     } 
+}
+
+.tablaProductos btn {
+    display: inline-block;
 }

@@ -18,3 +18,10 @@
     animation-duration: 3s;
     animation-delay: 0s;
 }
+
+.navbar-brand:hover::after{
+    content: 'Inicio';
+    margin-left: 8px;
+    font-size: 14px;
+    color: #e2e8f0;
+}

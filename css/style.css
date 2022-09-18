@@ -42,6 +42,12 @@ body {
   animation-duration: 3s;
   animation-delay: 0s; }
 
+.navbar-brand:hover::after {
+  content: 'Inicio';
+  margin-left: 8px;
+  font-size: 14px;
+  color: #e2e8f0; }
+
 /*========================*/
 /*========= Pie ==========*/
 /*========================*/
@@ -118,6 +124,9 @@ body {
 @media screen and (max-width: 1000px) {
   .tablaProductos {
     grid-template-columns: repeat(2, 1fr); } }
+
+.tablaProductos btn {
+  display: inline-block; }
 
 /*========================*/
 /*======= Contacto =======*/
