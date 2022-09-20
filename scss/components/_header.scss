@@ -22,6 +22,6 @@
 .navbar-brand:hover::after{
     content: 'Inicio';
     margin-left: 8px;
-    font-size: 14px;
+    font-size: $tamano_fuente;
     color: #e2e8f0;
 }

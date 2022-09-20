@@ -21,8 +21,9 @@
     line-height: 1.5em;
 
     & img {
-        width: 150px;
-        border-radius: 20px;
+        @extend .imagenes_productos;
+        //width: 150px;
+        //border-radius: 20px;
     }
 }
 
