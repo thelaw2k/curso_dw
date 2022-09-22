@@ -7,6 +7,28 @@ $tamano_fuente: 20px;
 $fuente_general: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 $fondo_celda_productos: rgb(215, 218, 224);
 
+//Map
+$colores: (
+ facebook: #1877f2,
+ instagram:  #D43089,
+ twitter:  #1DA1F2,
+);
+
+@each $nombre-color, $color in $colores {
+    .btn__#{$nombre-color} {
+        color: $color;
+    }
+}
+
+//Mixin
+@mixin mixin_prueba($margen_top, $radio_borde, $color_fondo) {
+    margin-top: $margen_top;
+    border-radius: $radio_borde;
+    background-color: $color_fondo;
+}
+
+
+
 body {
     font-family: $fuente_general;
     font-size: $tamano_fuente;

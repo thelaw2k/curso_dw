@@ -1,6 +1,15 @@
 /*========================*/
 /*====== Generales =======*/
 /*========================*/
+.btn__facebook {
+  color: #1877f2; }
+
+.btn__instagram {
+  color: #D43089; }
+
+.btn__twitter {
+  color: #1DA1F2; }
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 20px; }
@@ -58,19 +67,18 @@ body {
 .pie__formNews {
   display: flex;
   margin-top: 40px;
+  border-radius: 25px;
+  background-color: #add3b8;
   padding: 30px 0px 30px 0px;
   width: 100%;
-  background-color: #add3b8;
-  justify-content: center;
-  border-radius: 25px; }
+  justify-content: center; }
 
 .pie__nav {
   display: grid;
-  grid-template-columns: 5fr 1fr;
-  background-color: #97a5d3;
-  margin-top: 20px;
+  margin-top: 25px;
   border-radius: 20px;
-  margin-top: 20px;
+  background-color: #97a5d3;
+  grid-template-columns: 1fr 4fr 1fr;
   padding: 20px 0px 20px 0px; }
 
 .pie__menu {
@@ -88,6 +96,13 @@ body {
   .pie__menu a:hover {
     text-decoration: underline;
     color: #1a076b; }
+
+.pie__logosSociales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em; }
 
 .pie__logos {
   display: flex;
@@ -167,7 +182,7 @@ body {
 /*========================*/
 .main__tablaNosotros {
   display: grid;
-  grid-template-columns: 1fr 2fr; }
+  grid-template-columns: 1fr 3fr; }
 
 .main__fotoIntegrante {
   display: grid;
