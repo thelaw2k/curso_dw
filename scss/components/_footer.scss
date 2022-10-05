@@ -61,3 +61,42 @@
 .pie__wfx{
     color: rgb(238, 238, 238);
 }
+
+@media screen and (max-width: 500px) {
+    .pie__nav{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .pie__logosSociales {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+        font-size: 1.3em;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .pie__logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .pie__wfx{
+        color: rgb(238, 238, 238);
+    }
+
+    .pie__menu{
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 100%;
+        width: 100%;
+        list-style:none;
+        text-align: center;
+        padding: 0px;
+    }
+}
