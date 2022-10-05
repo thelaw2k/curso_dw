@@ -16,8 +16,6 @@
 .main__formContacto{
     display: flex;
     flex-direction: column;
-    align-items: space-evenly;
-    justify-content: space-evenly;
     max-width: 100%;
     margin: 20px;
     padding: 10px;
@@ -37,5 +35,17 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
+
+        & .input-group {
+            width: 80%;
+            margin: 5px 0px 5px 0px;
+            align-items: center;
+        
+        }
 }
 
+@media screen and (max-width: 800px) {
+    .main__formContacto{
+        max-width: 100%;
+    }
+}
